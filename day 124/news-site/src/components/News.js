@@ -11,7 +11,7 @@ const News = () => {
         const response = await axios.get('https://newsapi.org/v2/top-headlines', {
           params: {
             country: 'us',
-            apiKey: 'YOUR_API_KEY'
+            apiKey: '289b3d2c49374d9797b15fdeb416ac13'
           }
         });
         setArticles(response.data.articles);
