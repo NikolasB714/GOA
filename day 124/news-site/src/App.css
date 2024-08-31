@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.news-article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-article h2 {
+  font-size: 1.5em;
+}
+
+.news-article p {
+  font-size: 1em;
+}
+
+.news-article a {
+  color: #007bff;
+  text-decoration: none;
+}
