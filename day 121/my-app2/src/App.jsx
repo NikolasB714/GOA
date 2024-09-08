@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ColorPicker = () => {
+function ColorPicker() {
   const [color, setColor] = useState('#000000');
 
   const handleChange = (e) => {
@@ -13,6 +13,6 @@ const ColorPicker = () => {
       <div style={{ backgroundColor: color, width: '100px', height: '100px' }}></div>
     </div>
   );
-};
+}
 
 export default ColorPicker;

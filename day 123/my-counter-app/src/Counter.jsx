@@ -1,25 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
-function Counter() {
-
+const Counter = () => {
   const [count, setCount] = useState(0);
-
 
   useEffect(() => {
     document.title = `Count: ${count}`;
   }, [count]);
 
-
-  const handleIncrement = () => {
+  const increment = () => {
     setCount(count + 1);
   };
 
   return (
     <div>
-      <button onClick={handleIncrement}>Increment</button>
-      <p>Count: {count}</p>
+      <h1>Counter: {count}</h1>
+      <button onClick={increment}>Increment</button>
     </div>
   );
-}
+};
 
 export default Counter;

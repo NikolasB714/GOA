@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 
-const TextExpander = ({ text }) => {
+function TextExpander({ text }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpanded((prev) => !prev);
   };
 
   return (
     <div>
       <p>{isExpanded ? text : `${text.substring(0, 100)}...`}</p>
-      <button onClick={toggleExpand}>{isExpanded ? 'Read Less' : 'Read More'}</button>
+      <button onClick={toggleExpand}>
+        {isExpanded ? 'Read Less' : 'Read More'}
+      </button>
     </div>
   );
-};
+}
 
 export default TextExpander;

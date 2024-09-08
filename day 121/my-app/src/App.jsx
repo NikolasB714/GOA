@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './App.css';
 
-const ThemeSwitcher = () => {
+function App() {
   const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
@@ -8,13 +9,12 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className={theme}>
+    <div className={`App ${theme}`}>
       <button onClick={toggleTheme}>
         Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
       </button>
     </div>
   );
-};
+}
 
-export default ThemeSwitcher;
-
+export default App;
